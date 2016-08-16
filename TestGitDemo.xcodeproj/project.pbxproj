@@ -15,6 +15,7 @@
 		34E491CA1D6342F5008FD3CA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34E491C81D6342F5008FD3CA /* LaunchScreen.storyboard */; };
 		34E491D51D6342F6008FD3CA /* TestGitDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E491D41D6342F6008FD3CA /* TestGitDemoTests.m */; };
 		34E491E01D6342F6008FD3CA /* TestGitDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E491DF1D6342F6008FD3CA /* TestGitDemoUITests.m */; };
+		716A1AD51D634B81006C4022 /* DemoTest1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 716A1AD41D634B80006C4022 /* DemoTest1.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		34E491DB1D6342F6008FD3CA /* TestGitDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestGitDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		34E491DF1D6342F6008FD3CA /* TestGitDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestGitDemoUITests.m; sourceTree = "<group>"; };
 		34E491E11D6342F6008FD3CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		716A1AD41D634B80006C4022 /* DemoTest1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoTest1.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +112,7 @@
 				34E491C81D6342F5008FD3CA /* LaunchScreen.storyboard */,
 				34E491CB1D6342F5008FD3CA /* Info.plist */,
 				34E491BA1D6342F5008FD3CA /* Supporting Files */,
+				716A1AD41D634B80006C4022 /* DemoTest1.swift */,
 			);
 			path = TestGitDemo;
 			sourceTree = "<group>";
@@ -270,6 +273,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				716A1AD51D634B81006C4022 /* DemoTest1.swift in Sources */,
 				34E491C21D6342F5008FD3CA /* ViewController.m in Sources */,
 				34E491BF1D6342F5008FD3CA /* AppDelegate.m in Sources */,
 				34E491BC1D6342F5008FD3CA /* main.m in Sources */,
@@ -415,10 +419,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = TestGitDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = in.co.learntonight.seller.TestGitDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -426,6 +432,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = TestGitDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = in.co.learntonight.seller.TestGitDemo;
@@ -498,6 +505,7 @@
 				34E491E61D6342F6008FD3CA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		34E491E71D6342F6008FD3CA /* Build configuration list for PBXNativeTarget "TestGitDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +514,7 @@
 				34E491E91D6342F6008FD3CA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		34E491EA1D6342F6008FD3CA /* Build configuration list for PBXNativeTarget "TestGitDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +523,7 @@
 				34E491EC1D6342F6008FD3CA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
